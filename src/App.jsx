@@ -55,7 +55,7 @@ function App() {
 
      //For preventing app crashes 
     if(redoStack.length == 0) return;
-    
+
     //When click on redo button first we have last element in redo stack. 
     const lastElementInRedoStack = redoStack[redoStack.length - 1];
 
@@ -107,7 +107,7 @@ function App() {
           {
             showMessage &&
             <p className='text-xl text-center text-gray-600 pointer-events-none'>
-              Click anywhere in this area to add a {drawType === "circle" ? "circle" : "square"}. <br /> Use Ctrl+Z to undo and Ctrl+Y to redo.
+              Click anywhere in this area to add a {drawType === "circle" ? "circle" : "square"}. <br />
             </p>
           }
           {
